@@ -27,7 +27,6 @@
 
     <ItemGroup>
       <Folder Include="Controllers\UserController\" />
-      <Folder Include="Data\" />
     </ItemGroup>
 
 </Project>
