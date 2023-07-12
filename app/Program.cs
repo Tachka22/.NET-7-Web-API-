@@ -1,4 +1,4 @@
-
+global using app.Models;
 using app.Data;
 
 var builder = WebApplication.CreateBuilder(args);
