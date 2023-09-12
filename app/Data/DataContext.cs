@@ -5,16 +5,11 @@ namespace app.Data
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
-        {
+        public DbSet<User> Users { get; set; } = null!;
 
-        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=users;Trusted_Connection=True;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=users;Trusted_Connection=True;TrustServerCertificate=True");
         }
-
-        public DbSet<User> Users { get; set; } = null!;
     }
 }

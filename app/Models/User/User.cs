@@ -10,6 +10,7 @@ public class User
     /// <summary>
     /// Уникальный идентификатор пользователя
     /// </summary>
+    [Key]
     public Guid Guid { get; set; }
     
     /// <summary>
